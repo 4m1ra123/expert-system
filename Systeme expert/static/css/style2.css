@@ -1,0 +1,74 @@
+body {
+    font-family:'Black Han Sans', sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .checklist {
+    margin-top: 100px;
+    list-style-type: none;
+    padding: 50;
+    display: flex; /* Utilisation de flexbox pour aligner horizontalement les éléments de la liste */
+    justify-content: center; /* Pour centrer les éléments horizontalement */
+  }
+  
+  .checklist li {
+    margin-right: 100px; /* Ajoute un espace entre les éléments de la liste */
+    opacity: 0; /* Définir l'opacité initiale à 0 */
+    animation: fade-in 1s ease forwards; /* Animation pour faire apparaître les éléments */
+  }
+  
+  .checklist li:hover{
+    transform: scale(1.2);
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0; /* Opacité de départ */
+      transform: translateY(-20px); /* Décalage vers le haut pour créer un effet de montée */
+    }
+    to {
+      opacity: 1; /* Opacité finale */
+      transform: translateY(0); /* Pas de décalage */
+    }
+  }
+  
+  .checklist label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .checklist input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .image{
+    height: 200px;
+    width: 200px;
+  }
+  
+  .btn{
+    background-color: #516079;
+    color: #C5C6C6;
+    margin-top: 50px;
+    height: 50px;
+    width: 150px;
+    opacity: 0; /* Définir l'opacité initiale à 0 */
+    animation: fade-in 0.5s ease forwards; /* Animation pour faire apparaître le bouton */
+  }
+  
+  .btn:hover{
+    color: #516079;
+    background-color:#C5C6C6 ;
+    transform: scale(1.2);
+  }
+
+  button:hover{
+    transform: scale(1.2);
+  }
+  

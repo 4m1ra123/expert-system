@@ -1,0 +1,49 @@
+.container-fluid {
+    margin-top: 120px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 40px;
+    color: #2E3244;
+    align-items: flex-end;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.img-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -270px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.5s;
+}
+
+button {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 27px;
+    width: 170px;
+    height: 60px;
+    color: #DFE0E0;
+    background-color: #2E3244;
+    border-radius: 7px;
+    margin-left: 60px;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    width: 180px;
+    height: 65px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
